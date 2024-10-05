@@ -13,8 +13,6 @@ var searchMatrix = function (matrix, target) {
        let mid = Math.floor(i + ((j -i))/2);
        let row = Math.floor(mid / cols)
        let col = Math.floor(mid % cols)
-       console.log('mid----', mid)
-       console.log(row,'col----', col)
         if (matrix[row][col] == target) {
             return true
         }else if (matrix[row][col] > target) {
